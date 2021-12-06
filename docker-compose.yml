@@ -1,0 +1,16 @@
+version: '3.9'
+
+services:
+  database:
+    image: postgres:latest
+    container_name: django_postgres_database
+    restart: always
+    ports:
+      - "5432:5432"
+    volumes:
+      - django-data:/var/lib/postgresql/data
+    environment:
+      POSTGRES_PASSWORD: MyTopSecretPassword!123
+
+volumes:
+  django-data:
