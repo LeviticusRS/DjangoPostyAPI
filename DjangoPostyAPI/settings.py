@@ -35,6 +35,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'crud_twilio'  # Registering new app for the crud for twilio
 ]
 
 MIDDLEWARE = [
